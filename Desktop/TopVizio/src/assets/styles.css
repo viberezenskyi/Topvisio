@@ -1,0 +1,109 @@
+:root {
+  --black: #000000;
+  --white: #ffffff;
+  --gray: #999999;
+}
+
+body {
+  overflow-y: auto;
+  margin: 0;
+  padding: 0;
+  font-family: 'Alumni Sans', sans-serif;
+  background-color: var(--black);
+  color: var(--white);
+  body::-webkit-scrollbar {
+    display: none;
+  }
+}
+html, body {
+  overflow-x: hidden;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  display: block;
+  max-width: 95%;
+  height: auto;
+}
+
+button {
+  font-family: 'Alumni Sans', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  padding: 10px 24px;
+  border: 2px solid var(--white);
+  background: transparent;
+  color: var(--white);
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background: var(--white);
+  color: var(--black);
+}
+
+section {
+  padding: 80px 20px;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid var(--gray);
+  margin: 40px 0;
+  opacity: 0.3;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+
+.Text_in_block{
+    font-size: 28px;
+    text-transform: uppercase;
+    display: inline-block;
+	  align-items: center;
+	  gap: 12px;
+	  list-style: none;
+	  padding-left: 100px;
+}
+
+.bull{
+	color: #FFFFFF;
+  font-size: 60px;
+  padding-left: 0px;
+}
+
+@media (max-width: 768px) {
+  section {
+    padding: 60px 16px;
+  }
+
+  h1 {
+    font-size: 2.2rem !important;
+  }
+
+  h2 {
+    font-size: 1.6rem !important;
+  }
+
+  h3 {
+    font-size: 1.2rem !important;
+  }
+
+  button {
+    font-size: 14px;
+    padding: 8px 20px;
+  }
+}
